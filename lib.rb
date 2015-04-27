@@ -60,7 +60,7 @@ class Racism
 	    end
 	    case( data_array[0] )
 		when "b"
-		     ''' Ruby pls {this is so messed up: fix late}'''
+		     ''' Ruby pls {this is so messed up: fix later}'''
 	             parse = data_array[9..-1].join('').gsub(/<.*?>/, '').gsub('\x00', '');
 	             saying = parse.gsub("&lt;", "<").gsub("&gt;", ">").gsub("&#39;", "'").gsub("&quot;", "\"").gsub("&amp", "&");
 	             if (data_array[2].length > 0)
