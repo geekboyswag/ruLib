@@ -2,20 +2,20 @@ require "socket";
 
 class Racism
 	def initialize(chat, server, nigger, password)
-	        @nigger = nigger;
-		@password = password;
-		@name = chat;
-		@server = server;
-		@port = 443;
-		@racist_sock = nil;
-		@ping_thread = Thread.new do
-			loop do
-				sleep(10);
-				ping();
-			end
-		end
-		@connected = false
-		connect()
+	    @nigger = nigger;
+            @password = password;
+	    @name = chat;
+	    @server = server;
+	    @port = 443;
+            @racist_sock = nil;
+	    @ping_thread = Thread.new do
+			 loop do
+			      sleep(10);
+			      ping();
+			 end
+	    end
+	    @connected = false
+	    connect()
 	end
 	
 	def connect()
@@ -60,6 +60,7 @@ class Racism
 	    end
 	    case( data_array[0] )
 		when "b"
+		     ''' Ruby pls {this is so messed up: fix late}'''
 	             parse = data_array[9..-1].join('').gsub(/<.*?>/, '').gsub('\x00', '');
 	             saying = parse.gsub("&lt;", "<").gsub("&gt;", ">").gsub("&#39;", "'").gsub("&quot;", "\"").gsub("&amp", "&");
 	             if (data_array[2].length > 0)
